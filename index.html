@@ -14,19 +14,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
+    <script src="./typeit.js"></script>
   </head>
   <body class="background" id="element2">
-    <div id="details"></div>
+    <div class="row" style="margin:0px" id="details">
+      <div class="col-lg-6 col-xs-12 col-md-6" id="picturePanel">
+        <div class="row" id="proPicture">
+          <img
+            src="/Assets/pro-picture.png"
+            alt="Smiley face"
+            height="150px"
+            width="150px"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 col-xs-12 col-md-6" id="detailsPanel">
+        <div class="row" id="hiGesture">Hi</div>
+        <div class="row" id="introduction"></div>
+      </div>
+    </div>
 
-    <script>
-      VANTA.WAVES({
-        el: "#element2",
-        color: 0x111111,
-        waveHeight: 20,
-        shininess: 50,
-        waveSpeed: 1.5,
-        zoom: 0.75
-      });
-    </script>
+    <script src="./custom.js"></script>
   </body>
 </html>
