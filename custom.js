@@ -8,7 +8,7 @@ VANTA.WAVES({
 });
 
 new TypeIt("#introduction", {
-  speed: 50,
+  speed: 80,
   startDelay: 900,
   loop: true
 })
@@ -16,10 +16,7 @@ new TypeIt("#introduction", {
   .pause(300)
   .delete(21)
   .pause(250)
-  .type("a former intern at WSO2 Inc")
-  .pause(750)
-  .options({ speed: 100, deleteSpeed: 75 })
-  .delete(8)
-  .pause(750)
-  .type("<em>planet.</em>")
+  .type(
+    "a former <span id='name'>Trainee Software Engineer</span> @ <span id='companyName'>WSO2 Inc</span>."
+  )
   .go();
