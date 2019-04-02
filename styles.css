@@ -5,12 +5,12 @@
   margin: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) {
   #details {
-    width: 80vw;
+    width: 88vw;
     height: 90vh;
     position: absolute;
-    left: 10vw;
+    left: 6vw;
     top: 5vh;
     box-shadow: 1vh 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -18,56 +18,151 @@
     backdrop-filter: blur(5px);
   }
   #profileImage {
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   #details {
-    width: 80vw;
-    height: 90vh;
+    width: 60vw;
+    height: 60vh;
     position: absolute;
-    left: 10vw;
-    top: 5vh;
+    left: 20vw;
+    top: 20vh;
     box-shadow: 1vh 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.098);
     backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
   }
   #profileImage {
     width: 20vw;
     height: 20vw;
   }
+
+  #picturePanel {
+    height: 95%;
+    border-right: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #socialIcons {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* #detailsPanel {
+    height: 100%;
+    padding: 0;
+    padding-left: 2rem;
+  } */
 }
 
-#details {
-  width: 80vw;
-  height: 90vh;
-  position: absolute;
-  left: 10vw;
-  top: 5vh;
-  box-shadow: 1vh 0 1rem 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.098);
-  backdrop-filter: blur(5px);
+@media only screen and (min-width: 1200px) {
+  #details {
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    left: 15vw;
+    top: 15vh;
+    box-shadow: 1vh 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.098);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+  }
+  #profileImage {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  #picturePanel {
+    height: 95%;
+    border-right: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #socialIcons {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  #detailsPanel {
+    height: 95%;
+  }
 }
 
-#picturePanel {
-  height: 50%;
-  border-right: 1px solid white;
-  margin-top: 1rem;
+@media only screen and (min-width: 450px) {
+  #details {
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    left: 15vw;
+    top: 15vh;
+    box-shadow: 1vh 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.098);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+  }
+  #profileImage {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  #picturePanel {
+    border-right: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #socialIcons {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* #detailsPanel {
+    height: 100%;
+    padding: 0;
+    padding-left: 2rem;
+  } */
 }
-#detailsPanel {
-  height: 50%;
-  padding: 2rem;
+
+.schoolDetail {
+  padding: 0;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #proPicture {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 #hiGesture {
@@ -89,13 +184,6 @@
   color: #fe5200;
 }
 
-#socialIcons {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  display: flex;
-  justify-content: space-around;
-}
-
 #education {
   color: white;
 }
@@ -105,10 +193,11 @@
   align-items: center;
 }
 
-#experiencedTitle {
+#title {
   color: white;
-  font-size: 2rem;
-  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
 }
 
 .schoolLogo {
@@ -116,12 +205,18 @@
   height: 5vw;
 }
 
-#profileImage {
-  width: 20vw;
-  height: 20vw;
-}
-
 .socialIcon {
   width: 2vw;
   height: 2vw;
+}
+
+#technologies {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+#showcase {
+  display: flex;
+  justify-content: space-around;
 }
