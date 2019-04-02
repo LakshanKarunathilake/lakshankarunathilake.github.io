@@ -17,6 +17,10 @@
     background-color: rgba(255, 255, 255, 0.098);
     backdrop-filter: blur(5px);
   }
+  #profileImage {
+    width: 30vw;
+    height: 30vw;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -30,6 +34,10 @@
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.098);
     backdrop-filter: blur(5px);
+  }
+  #profileImage {
+    width: 20vw;
+    height: 20vw;
   }
 }
 
@@ -82,6 +90,8 @@
 }
 
 #socialIcons {
+  padding-left: 5vw;
+  padding-right: 5vw;
   display: flex;
   justify-content: space-around;
 }
@@ -99,4 +109,19 @@
   color: white;
   font-size: 2rem;
   font-style: italic;
+}
+
+.schoolLogo {
+  width: 5vw;
+  height: 5vw;
+}
+
+#profileImage {
+  width: 20vw;
+  height: 20vw;
+}
+
+.socialIcon {
+  width: 2vw;
+  height: 2vw;
 }
